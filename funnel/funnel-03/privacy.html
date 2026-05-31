@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>מדיניות פרטיות | ספיד קלין</title>
+  <meta name="robots" content="noindex" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --text: #0F172A; --muted: #64748B; --accent: #0EA5E9; --border: #E2E8F0; --bg: #F8FAFC; --surface: #fff; }
+    body { font-family: 'Heebo', sans-serif; font-size: 16px; line-height: 1.85; color: var(--text); background: var(--bg); }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .topbar { background: var(--surface); border-bottom: 1px solid var(--border); padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 10; }
+    .logo { font-size: 18px; font-weight: 900; letter-spacing: -.5px; }
+    .logo .s { color: var(--accent); }
+    .back { font-size: 14px; color: var(--muted); display: flex; align-items: center; gap: 6px; }
+    .back:hover { color: var(--accent); }
+    .wrap { max-width: 800px; margin: 0 auto; padding: 56px 24px 100px; }
+    .doc-tag { display: inline-block; font-size: 12px; font-weight: 600; letter-spacing: .06em; color: var(--accent); background: #e0f2fe; padding: 4px 12px; border-radius: 100px; margin-bottom: 16px; }
+    h1 { font-size: clamp(26px, 4vw, 38px); font-weight: 900; margin-bottom: 8px; line-height: 1.2; }
+    .meta { font-size: 13px; color: var(--muted); margin-bottom: 48px; padding-bottom: 24px; border-bottom: 2px solid var(--border); }
+    h2 { font-size: 18px; font-weight: 800; margin: 44px 0 14px; color: var(--text); padding-bottom: 8px; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 10px; }
+    .sec-num { display: inline-flex; align-items: center; justify-content: center; min-width: 26px; height: 26px; background: var(--accent); color: #fff; border-radius: 50%; font-size: 13px; font-weight: 700; flex-shrink: 0; }
+    p { font-size: 15px; color: #334155; margin-bottom: 14px; }
+    ul, ol { margin: 10px 0 18px 0; padding-right: 22px; }
+    li { font-size: 15px; color: #334155; margin-bottom: 9px; line-height: 1.7; }
+    table { width: 100%; border-collapse: collapse; margin: 18px 0 26px; font-size: 14px; border-radius: 8px; overflow: hidden; box-shadow: 0 0 0 1px var(--border); }
+    th { background: #f1f5f9; text-align: right; padding: 11px 16px; font-weight: 700; color: #0f172a; border-bottom: 1px solid var(--border); }
+    td { padding: 11px 16px; border-bottom: 1px solid #f1f5f9; color: #334155; vertical-align: top; }
+    tr:last-child td { border-bottom: none; }
+    .callout { border-radius: 10px; padding: 16px 20px; margin: 20px 0; }
+    .callout-blue { background: #eff6ff; border: 1px solid #bfdbfe; }
+    .callout-yellow { background: #fefce8; border: 1px solid #fde68a; }
+    .callout-green { background: #f0fdf4; border: 1px solid #bbf7d0; }
+    .callout-red { background: #fff1f2; border: 1px solid #fecdd3; }
+    .callout p { margin: 0 0 6px; font-size: 14px; font-weight: 500; }
+    .callout p:last-child { margin: 0; }
+    .callout-blue p { color: #1e40af; }
+    .callout-yellow p { color: #92400e; }
+    .callout-green p { color: #166534; }
+    .callout-red p { color: #9f1239; }
+    .rights-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 16px 0 24px; }
+    .right-card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 16px; }
+    .right-card .right-icon { font-size: 22px; margin-bottom: 8px; }
+    .right-card h4 { font-size: 14px; font-weight: 700; margin-bottom: 4px; }
+    .right-card p { font-size: 13px; color: var(--muted); margin: 0; }
+    .contact-box { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 24px; margin: 24px 0; }
+    .contact-box h4 { font-size: 16px; font-weight: 700; margin-bottom: 12px; }
+    .contact-row { display: flex; align-items: center; gap: 10px; font-size: 14px; color: #334155; margin-bottom: 8px; }
+    .footer-note { margin-top: 60px; padding-top: 24px; border-top: 1px solid var(--border); font-size: 13px; color: var(--muted); line-height: 1.7; }
+    @media (max-width: 600px) { .rights-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+  <div class="topbar">
+    <a href="/" class="logo"><span class="s">Speed</span>Clean</a>
+    <a href="/" class="back">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+      חזרה לדף הבית
+    </a>
+  </div>
+
+  <div class="wrap">
+    <span class="doc-tag">מסמך רשמי</span>
+    <h1>מדיניות פרטיות</h1>
+    <p class="meta">
+      עודכן לאחרונה: אפריל 2026 &nbsp;·&nbsp;
+      אור מעוז, עוסק מורשה 313466013 &nbsp;·&nbsp;
+      הבנים 19, הרצליה
+    </p>
+
+    <div class="callout callout-blue">
+      <p>📋 <strong>בקצרה:</strong> אנחנו סוכנות שיווק דיגיטלי שמייצרת לידים. כשאתם ממלאים טופס, הפרטים שלכם מועברים לנותן שירות הניקוי שיחזור אליכם. אנחנו לא נותני השירות בפועל.</p>
+    </div>
+
+    <!-- 1 -->
+    <h2><span class="sec-num">1</span> מי אנחנו</h2>
+    <p>אור מעוז, עוסק מורשה מס' 313466013 (להלן: <strong>"החברה"</strong>, <strong>"אנחנו"</strong>), מפעיל את האתר lp.speed-clean.co.il בתחום שיווק דיגיטלי ויצירת לידים עבור נותני שירותי ניקוי מזגנים.</p>
+    <p><strong>החברה אינה נותנת שירות ניקוי בפועל</strong> ואינה צד לעסקה שנוצרת בין המשתמש לבין נותן השירות. תפקיד החברה הוא אך ורק להעביר את פרטי הפנייה לנותן השירות הרלוונטי.</p>
+
+    <!-- 2 -->
+    <h2><span class="sec-num">2</span> איזה מידע אנחנו אוספים</h2>
+    <p><strong>מידע שאתם מספקים ישירות:</strong></p>
+    <table>
+      <tr><th>סוג המידע</th><th>מטרת האיסוף</th><th>שדה חובה?</th></tr>
+      <tr><td>שם מלא</td><td>זיהוי ופנייה אישית</td><td>כן</td></tr>
+      <tr><td>מספר טלפון</td><td>חזרה ללקוח לתיאום שירות</td><td>כן</td></tr>
+      <tr><td>סוג שירות מבוקש</td><td>ניתוב הפנייה לנותן השירות המתאים</td><td>לא</td></tr>
+      <tr><td>עיר מגורים</td><td>ניתוב גיאוגרפי ושיפור השירות</td><td>לא</td></tr>
+    </table>
+
+    <p><strong>מידע הנאסף אוטומטית:</strong></p>
+    <ul>
+      <li>כתובת IP ומיקום גיאוגרפי משוער</li>
+      <li>סוג דפדפן, מערכת הפעלה וגרסה</li>
+      <li>מקור ההגעה לאתר (UTM source / medium / campaign)</li>
+      <li>עמודים שנצפו, זמן שהייה ונתיב גלישה</li>
+      <li>מזהה מכשיר (Device ID) לצרכי פרסום</li>
+      <li>נתוני אינטראקציה עם פרסומות (לחיצות, המרות)</li>
+    </ul>
+
+    <!-- 3 -->
+    <h2><span class="sec-num">3</span> כיצד אנחנו משתמשים במידע</h2>
+    <ul>
+      <li><strong>העברת הפנייה</strong> לנותן שירות ניקוי מזגנים לצורך יצירת קשר ותיאום ביקור</li>
+      <li><strong>ניהול מאגר לקוחות</strong> (CRM) לצורך מעקב ותיעוד פניות</li>
+      <li><strong>שיפור ואופטימיזציה</strong> של הקמפיינים הפרסומיים ושל חוויית האתר</li>
+      <li><strong>ריטרגטינג</strong> — הצגת פרסומות ממוקדות לגולשים שביקרו באתר, בפלטפורמות שונות</li>
+      <li><strong>תקשורת שיווקית</strong> — שליחת הודעות SMS, וואטסאפ או מייל עם מבצעים ועדכונים, בכפוף להסכמת המשתמש</li>
+      <li><strong>עמידה בחובות חוקיות</strong> ומענה לדרישות רגולטוריות</li>
+    </ul>
+
+    <!-- 4 -->
+    <h2><span class="sec-num">4</span> עוגיות (Cookies) וטכנולוגיות מעקב</h2>
+    <p>האתר משתמש בעוגיות ובפיקסלים לצורך מדידת ביצועים ופרסום ממוקד. להלן הכלים הפעילים:</p>
+    <table>
+      <tr><th>כלי</th><th>תפקיד</th><th>מדיניות פרטיות</th></tr>
+      <tr><td>Google Tag Manager</td><td>ניהול כלל התגיות וקוד המעקב</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy</a></td></tr>
+      <tr><td>Meta (Facebook) Pixel</td><td>מעקב המרות, ריטרגטינג בפייסבוק ואינסטגרם</td><td><a href="https://www.facebook.com/privacy/policy" target="_blank" rel="noopener">Meta Privacy</a></td></tr>
+      <tr><td>Google Ads / Analytics</td><td>מדידת ביצועים, ריטרגטינג בגוגל</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy</a></td></tr>
+      <tr><td>TikTok Pixel (אם רלוונטי)</td><td>מעקב המרות בטיקטוק</td><td><a href="https://www.tiktok.com/legal/page/row/privacy-policy" target="_blank" rel="noopener">TikTok Privacy</a></td></tr>
+    </table>
+    <p>ניתן לנהל העדפות עוגיות בהגדרות הדפדפן שלכם. לביטול פרסומות ממוקדות: <a href="https://optout.aboutads.info" target="_blank" rel="noopener">optout.aboutads.info</a> | <a href="https://www.youronlinechoices.eu" target="_blank" rel="noopener">youronlinechoices.eu</a>.</p>
+
+    <!-- 5 -->
+    <h2><span class="sec-num">5</span> שיתוף המידע עם צדדים שלישיים</h2>
+    <p>אנחנו <strong>אינם מוכרים</strong> מידע אישי לצדדים שלישיים לצרכים מסחריים שאינם קשורים לפנייתכם. המידע עשוי להיות מועבר אל:</p>
+    <ul>
+      <li><strong>קבלן ביצוע השירות</strong> — לצורך יצירת קשר עם הלקוח, תיאום וביצוע הניקוי</li>
+      <li><strong>מערכת CRM</strong> — לניהול פניות ולמעקב אחר תהליך השירות</li>
+      <li><strong>כלי אוטומציה שיווקית</strong> (לדוגמה: Make.com, Zapier) — לצורך ניתוב אוטומטי של הפניות</li>
+      <li><strong>פלטפורמות פרסום</strong> (מטא, גוגל, טיקטוק ואחרות) — לצורך ריטרגטינג ומדידת המרות</li>
+      <li><strong>ספקי אחסון ענן</strong> — לרבות שרתים מחוץ לישראל, הכפופים לתקני אבטחה בינלאומיים (GDPR / SOC2)</li>
+      <li><strong>רשויות חוק</strong> — בהתאם לדרישה חוקית או צו שיפוטי</li>
+    </ul>
+    <div class="callout callout-yellow">
+      <p>⚠️ <strong>שימו לב:</strong> לאחר העברת פרטיכם לקבלן הביצוע, מדיניות הפרטיות של אותו גורם חלה על הטיפול בנתונים מצידו. אנחנו ממליצים לבדוק את מדיניות הפרטיות של קבלן הביצוע בנפרד.</p>
+    </div>
+
+    <!-- 6 -->
+    <h2><span class="sec-num">6</span> העברת מידע מחוץ לישראל</h2>
+    <p>חלק מהמידע שלכם מאוחסן ו/או מעובד בשרתים הממוקמים מחוץ לישראל — בעיקר באיחוד האירופי ובארצות הברית. העברות אלו מתבצעות בהתאם למנגנוני הגנה מקובלים:</p>
+    <ul>
+      <li>Standard Contractual Clauses (SCCs) של האיחוד האירופי</li>
+      <li>תאימות ל-GDPR של ספקי הענן</li>
+      <li>תקני אבטחה ISO 27001 / SOC 2 Type II</li>
+    </ul>
+
+    <!-- 7 -->
+    <h2><span class="sec-num">7</span> שמירת המידע</h2>
+    <p>המידע נשמר במאגרינו <strong>ללא הגבלת זמן</strong>, אלא אם כן:</p>
+    <ul>
+      <li>תגישו בקשת מחיקה בכתב (ראו סעיף 9)</li>
+      <li>נדרשת מחיקה לפי חוק</li>
+      <li>המידע אינו נחוץ עוד לצרכי העסק</li>
+    </ul>
+    <p>נתונים אנונימיים ואגרגטיביים (ללא זיהוי אישי) עשויים להישמר לצמיתות לצרכי ניתוח ושיפור.</p>
+
+    <!-- 8 -->
+    <h2><span class="sec-num">8</span> הסכמה לתקשורת שיווקית</h2>
+    <p>בסימון תיבת האישור בטופס יצירת הקשר, המשתמש מאשר קבלת תקשורת שיווקית הכוללת:</p>
+    <ul>
+      <li>הודעות SMS ו/או וואטסאפ לגבי מבצעים, תזכורות ועדכוני שירות</li>
+      <li>הודעות דוא"ל שיווקיות</li>
+      <li>פרסומות ממוקדות בפלטפורמות דיגיטליות</li>
+    </ul>
+    <p>ניתן לבטל הסכמה זו בכל עת על ידי פנייה ל-<a href="mailto:mail@ormaoz.com">mail@ormaoz.com</a> בציון "הסרה מרשימת תפוצה", או על ידי לחיצה על קישור הביטול בהודעות שנשלחות.</p>
+
+    <!-- 9 -->
+    <h2><span class="sec-num">9</span> זכויותיכם</h2>
+    <div class="rights-grid">
+      <div class="right-card">
+        <div class="right-icon">👁️</div>
+        <h4>זכות עיון</h4>
+        <p>לבקש לראות אילו מידע שמור עליכם במאגרינו</p>
+      </div>
+      <div class="right-card">
+        <div class="right-icon">✏️</div>
+        <h4>זכות תיקון</h4>
+        <p>לבקש לתקן מידע שגוי, חלקי או מיושן</p>
+      </div>
+      <div class="right-card">
+        <div class="right-icon">🗑️</div>
+        <h4>זכות מחיקה ("להישכח")</h4>
+        <p>לבקש מחיקת כלל המידע האישי שלכם ממאגרינו</p>
+      </div>
+      <div class="right-card">
+        <div class="right-icon">🚫</div>
+        <h4>זכות התנגדות</h4>
+        <p>להתנגד לשימוש בפרטיכם לצורכי שיווק ישיר</p>
+      </div>
+      <div class="right-card">
+        <div class="right-icon">📦</div>
+        <h4>ניידות מידע</h4>
+        <p>לקבל את המידע שלכם בפורמט קריא ומובנה</p>
+      </div>
+      <div class="right-card">
+        <div class="right-icon">⏸️</div>
+        <h4>הגבלת עיבוד</h4>
+        <p>לבקש עצירת עיבוד המידע בנסיבות מסוימות</p>
+      </div>
+    </div>
+    <p>לכל פנייה בנושא פרטיות נא לפנות אל: <a href="mailto:mail@ormaoz.com">mail@ormaoz.com</a>. נטפל בפנייה תוך <strong>30 ימי עסקים</strong>.</p>
+
+    <!-- 10 -->
+    <h2><span class="sec-num">10</span> אבטחת מידע</h2>
+    <p>אנחנו נוקטים אמצעי אבטחה טכניים וארגוניים הכוללים:</p>
+    <ul>
+      <li>הצפנת תקשורת מלאה (HTTPS / TLS 1.3)</li>
+      <li>בקרת גישה מבוססת הרשאות מינימליות</li>
+      <li>שימוש בספקי ענן בעלי תעודות אבטחה מוכרות</li>
+      <li>ניטור אנומליות גישה</li>
+    </ul>
+    <p>עם זאת, אין אפשרות להבטיח אבטחה מוחלטת בסביבת אינטרנט. אנחנו ממליצים לא לשתף סיסמאות, פרטי תשלום או מידע רגיש אחר דרך טפסי האתר.</p>
+
+    <!-- 11 -->
+    <h2><span class="sec-num">11</span> אתרים חיצוניים וקישורים</h2>
+    <p>האתר עשוי להכיל קישורים לאתרים חיצוניים (לדוגמה: וואטסאפ, גוגל). מדיניות פרטיות זו חלה על האתר שלנו בלבד. אנחנו אינם אחראים למדיניות הפרטיות של אתרים אחרים ומומלץ לעיין בה בנפרד.</p>
+
+    <!-- 12 -->
+    <h2><span class="sec-num">12</span> קטינים</h2>
+    <p>האתר אינו מיועד לילדים מתחת לגיל 18. אנחנו אינם אוספים ביודעין מידע אישי מקטינים. אם נודע לנו שנאסף מידע כזה, נמחקו לאלתר.</p>
+
+    <!-- 13 -->
+    <h2><span class="sec-num">13</span> שינויים במדיניות</h2>
+    <p>אנחנו עשויים לעדכן מדיניות זו מעת לעת. כל שינוי מהותי יצוין בדף זה עם תאריך עדכון. המשך השימוש באתר לאחר פרסום שינוי מהווה הסכמה למדיניות המעודכנת.</p>
+
+    <!-- 14 -->
+    <h2><span class="sec-num">14</span> פרטי יצירת קשר — ממונה פרטיות</h2>
+    <div class="contact-box">
+      <h4>לכל פנייה בנושא פרטיות:</h4>
+      <div class="contact-row">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0EA5E9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        אור מעוז — ממונה הגנת פרטיות
+      </div>
+      <div class="contact-row">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0EA5E9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        <a href="mailto:mail@ormaoz.com">mail@ormaoz.com</a>
+      </div>
+      <div class="contact-row">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0EA5E9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        הבנים 19, הרצליה, ישראל
+      </div>
+    </div>
+
+    <p class="footer-note">
+      מדיניות זו נכתבה בהתאם לחוק הגנת הפרטיות, תשמ"א-1981, תקנות הגנת הפרטיות (אבטחת מידע), תשע"ז-2017, חוק התקשורת (בזק ושידורים), תשמ"ב-1982 (סעיפי ספאם), וה-GDPR ככל שחל.
+      <br/><br/>
+      מסמך זה אינו מהווה ייעוץ משפטי. לקבלת ייעוץ משפטי פרטני יש לפנות לעורך דין.
+    </p>
+  </div>
+</body>
+</html>
