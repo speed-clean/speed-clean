@@ -15,6 +15,17 @@
     { "source": "/accessibility",   "destination": "/funnel/funnel-01/accessibility.html" },
     { "source": "/accessibility/",  "destination": "/funnel/funnel-01/accessibility.html" },
 
+    { "source": "/v3",              "destination": "/funnel/funnel-03/index.html" },
+    { "source": "/v3/",             "destination": "/funnel/funnel-03/index.html" },
+    { "source": "/v3/thank-you",    "destination": "/funnel/funnel-01/thank-you.html" },
+    { "source": "/v3/thank-you/",   "destination": "/funnel/funnel-01/thank-you.html" },
+    { "source": "/v3/terms",        "destination": "/funnel/funnel-01/terms.html" },
+    { "source": "/v3/terms/",       "destination": "/funnel/funnel-01/terms.html" },
+    { "source": "/v3/privacy",      "destination": "/funnel/funnel-01/privacy.html" },
+    { "source": "/v3/privacy/",     "destination": "/funnel/funnel-01/privacy.html" },
+    { "source": "/v3/accessibility","destination": "/funnel/funnel-01/accessibility.html" },
+    { "source": "/v3/accessibility/","destination": "/funnel/funnel-01/accessibility.html" },
+
     { "source": "/v2",              "destination": "/funnel/funnel-02/index.html" },
     { "source": "/v2/",             "destination": "/funnel/funnel-02/index.html" },
     { "source": "/v2/script.js",    "destination": "/funnel/funnel-02/script.js" },
@@ -42,6 +53,15 @@
     },
     {
       "source": "/v2(.*)",
+      "headers": [
+        { "key": "Cache-Control",               "value": "public, max-age=3600, stale-while-revalidate=86400" },
+        { "key": "X-Content-Type-Options",      "value": "nosniff" },
+        { "key": "X-Frame-Options",             "value": "SAMEORIGIN" },
+        { "key": "Referrer-Policy",             "value": "strict-origin-when-cross-origin" }
+      ]
+    },
+    {
+      "source": "/v3(.*)",
       "headers": [
         { "key": "Cache-Control",               "value": "public, max-age=3600, stale-while-revalidate=86400" },
         { "key": "X-Content-Type-Options",      "value": "nosniff" },
